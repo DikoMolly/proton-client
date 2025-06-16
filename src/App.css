@@ -1,0 +1,177 @@
+.newArrival{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+}
+.newArrival h1{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.newArrival span{
+    font-size: 50px;
+}
+.newArrival p{
+    color: rgb(85, 81, 81);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product{
+   /* background-color: red; */
+    width: 400px;
+    
+    padding-top: 100px;
+}
+
+
+.productList{
+    display: flex;
+}
+.product .productImage .label{
+   
+    color: white;
+    
+    margin-top: -20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    width: 85%;
+    font-size: 14px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.label h3{
+    background-color: black;
+    padding: 6px 10px;
+    border-radius: 3px;
+}
+.product .productImage img{
+    width: 100%;
+}
+.product .description{
+    padding-bottom: 10px;
+    padding-left: 50px;
+}
+.product .description p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product .description h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn-container{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+}
+.btn-container button{
+    background: black;
+    color: white;
+    width: 300px;
+    padding: 12px 0px;
+    border: 1px solid black;
+    outline: none;
+}
+
+
+.featured_product{
+    width: 350px;
+    height: 350px;
+
+}
+.featured_container .imgContainer{
+    width: 300px;
+    height: 350px;
+}
+.featured_container .imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.featured_container .featured_description{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 30px;
+}
+.bgdrop{
+    background-color: rgb(248, 243, 243);
+    height: 85vh;
+    margin-bottom: 30px;
+    padding: 50px 150px;
+}
+.featured_container .featured_description h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.featured_container .featured_description p{
+    color: rgb(63, 61, 61);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.featured_container .featured_description a{
+    color: rgb(24, 23, 23);
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+.bgdrop h1{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.featured_container{
+    display: flex;
+    justify-content: space-around;
+}
+.hub{
+    background: url("./assets/pillo.jpg");
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.hub h1{
+    font-size: 50px;
+}
+.hub button{
+    width: 300px;
+    padding: 13px 0px;
+    border: 1px solid white;
+    background: transparent;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
