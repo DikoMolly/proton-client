@@ -130,6 +130,109 @@
     display: flex;
     justify-content: space-around;
 }
+
+.dialog{
+    background: red;
+}
+
+@media screen and (max-width:425px){
+    .backgroundImage{
+        background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/soap1.jpg);
+        background-size: cover;
+        background-position: center;
+
+       
+    }
+    .backgroundImage .image01{
+        display: none;
+    }
+    .backgroundImage .image02{
+        display: none;
+    }
+    .backgroundImage .image03{
+        display: none;
+    }
+    .backgroundImage .text{
+        text-align: center;
+    }
+    
+    .mobile_view h2{
+        font-size: 15px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .mobile_view .proton h1{
+        font-size: 20px;
+    }
+    .mobile_view p{
+        font-size: 12px;
+        line-height: 20px;
+       
+    }
+    .down{
+        padding: 20px 10px;
+    }
+    .footer{
+        
+       display: none;
+    }
+    .mobile_view{
+        background-color: black;
+        padding: 30px 10px;
+        
+        color: white;
+    }
+    .bgdrop{
+        background-color: rgb(248, 243, 243);
+        height: 100vh;
+        margin-bottom: 30px;
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+       
+    }
+    .product .description{
+        margin-bottom: 35px;
+    }
+    .newArrival{
+        text-align: center;
+    }
+    .newArrival p{
+        font-size: 12px;
+        padding: 0px 80px;
+    }
+    .newArrival h1{
+        font-size: 30px;
+    }
+    /* .featured_container{
+        display: flex;
+        flex-wrap: wrap;
+        background: green;
+    }
+    .featured_container .imgContainer{
+        width: 200px;
+        height: 300px;
+       background-color: red;
+       padding: 10px;
+    }
+    .bgdrop h1{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .featured_container .featured_description{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        margin-bottom: 5px;
+    }
+    .featured_container .featured_description a{
+        color: rgb(24, 23, 23);
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    } */
+}
 .hub{
     background: url("./assets/pillo.jpg");
     height: 50vh;

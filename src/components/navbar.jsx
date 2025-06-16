@@ -4,12 +4,14 @@ import { Dialog } from 'primereact/dialog';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { searchProducts } from '../services/productservice';
 import './App.css';
+import '../App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGift, faUser, faHeart, faBasketShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faGift, faUser, faHeart, faBasketShopping, faMagnifyingGlass, faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 function Navbar() {
     const [query, setQuery] = useState('');
+
     const [results, setResults] = useState([]);
     const [modalVisible, setModalVisible] = useState(false);
     const [loading, setLoading] = useState(false);
@@ -57,15 +59,22 @@ function Navbar() {
             <div className="Navbar">
                 <div className="search_container">
                     <h1>Proton</h1>
-                    <div>
-                        <input
-                            type="text"
-                            placeholder="What can we help you find?"
-                            value={query}
-                            onChange={handleInputChange}
-                        />
-                        <FontAwesomeIcon icon={faMagnifyingGlass} className="search" />
+                    <div className='flexinput'>
+                        <div>
+                            <FontAwesomeIcon icon={faBars} />
+                        </div>
+                        <div className='searchinput'>
+
+                            <input
+                                type="text"
+                                placeholder="What can we help you find?"
+                                value={query}
+                                onChange={handleInputChange}
+                            />
+                            <FontAwesomeIcon icon={faMagnifyingGlass} className="search" />
+                        </div>
                     </div>
+
                 </div>
                 <div className="second">
                     <div>
@@ -91,15 +100,16 @@ function Navbar() {
 
             {modalVisible && query.trim() && (
                 <Dialog
-                   
+
                     visible={modalVisible}
-                    style={{ width: '60vw', top:'80px' }}
+                    style={{ width: '85vw', top: '100px' }}
                     onHide={() => setModalVisible(false)}
                     draggable={false}
                     resizable={false}
                     modal={false}
                     blockScroll={false}
                     appendTo={document.body}
+                    
                 >
                     {loading ? (
                         <div style={{ textAlign: 'center', padding: '2rem' }}>
@@ -125,7 +135,7 @@ function Navbar() {
                                             <h3>{product.label}</h3>
                                         </div>
                                         <div>
-                                            <img src={product.imageUrl || '/placeholder.png'} alt={product.name} style={{width:"300px"}} />
+                                            <img src={product.imageUrl || '/placeholder.png'} alt={product.name} style={{ width: "300px" }} />
                                         </div>
                                     </div>
                                     <div className="description">

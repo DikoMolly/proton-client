@@ -44,7 +44,7 @@
     align-items: center;
     margin-right: 30px;
 }
-.Navbar .search_container div{
+.Navbar .search_container .searchinput{
     background: rgb(58, 57, 57);
     width: 600px;
     height: 45px;
@@ -124,6 +124,55 @@
 .sale p{
     margin-left: 30px;
     margin-right: 30px;
+}
+
+@media screen and (max-width:425px){
+    footer{
+        display: none;
+    }
+   
+    .Navbar .search_container h1{
+        display: none;
+    }
+    .Navbar .second{
+        display: none;
+        background-color: red;
+        padding: 10px;
+    }
+    .Navbar .search_container .searchinput{
+        width: 290px;
+        
+    }
+    .Navbar .flexinput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Navbar .search_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25px;
+    }
+    .Navbar .search_container .search{
+        font-size: 14px;
+    }
+    .sale{
+        display: none;
+    }
+    .backgroundImage .text{
+        font-size: 12px;
+    }
+    .backgroundImage .text h2{
+        font-size: 12px;
+    }
+
+
+    /* footer */
+    
+
+    
+    
 }
 
 .backgroundImage{
