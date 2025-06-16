@@ -135,7 +135,82 @@
     background: red;
 }
 
-@media screen and (max-width:425px){
+.mobile_view{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .bgdrop{
+        display: none;
+    }
+    .backgroundImage{
+        background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/soap1.jpg);
+        background-size: cover;
+        background-position: center;
+
+       
+    }
+    .backgroundImage .image01{
+        display: none;
+    }
+    .backgroundImage .image02{
+        display: none;
+    }
+    .backgroundImage .image03{
+        display: none;
+    }
+    .backgroundImage .text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .Navbar .search_container h1{
+        display: none;
+    }
+    .Navbar .second{
+        display: none;
+        background-color: red;
+        
+    }
+    
+    .Navbar .flexinput{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Navbar .search_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25px;
+    }
+    .Navbar .search_container .search{
+        font-size: 14px;
+    }
+    .sale{
+        display: none;
+    }
+    /* .product .description{
+        margin-bottom: 40px;
+    } */
+
+    .footer .email{
+        display: none;
+    }
+    .footer .pages{
+      
+        width: 100%;
+    }
+    .footer .pages .pages_link{
+        width: 100%;
+    }
+    .down{
+        padding: 20px 100px;
+    }
+
+}
+
+@media screen and (max-width:430px){
     .backgroundImage{
         background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/soap1.jpg);
         background-size: cover;
@@ -177,6 +252,7 @@
        display: none;
     }
     .mobile_view{
+        display: block;
         background-color: black;
         padding: 30px 10px;
         
