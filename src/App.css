@@ -138,6 +138,9 @@
 .mobile_view{
     display: none;
 }
+.hamburger{
+    display: none;
+}
 
 @media screen and (max-width: 768px){
     .bgdrop{
@@ -207,10 +210,16 @@
     .down{
         padding: 20px 100px;
     }
+    .hamburger{
+        display: block;
+    }
 
 }
 
 @media screen and (max-width:430px){
+    .hamburger{
+        display: block;
+    }
     .backgroundImage{
         background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(./assets/soap1.jpg);
         background-size: cover;

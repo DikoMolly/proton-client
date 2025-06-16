@@ -61,7 +61,7 @@ function Navbar() {
                     <h1>Proton</h1>
                     <div className='flexinput'>
                         <div>
-                            <FontAwesomeIcon icon={faBars} />
+                            <FontAwesomeIcon icon={faBars} className='hamburger'/>
                         </div>
                         <div className='searchinput'>
 
